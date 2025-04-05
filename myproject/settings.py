@@ -188,20 +188,20 @@ settingsvariables = {
         'CELERY_BROKER_URL' : 'redis://192.168.153.48:6379',
         'dbdefault': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'ebdb_prod',
-            'USER': 'surveydbuser',
-            'PASSWORD': 'QjmRcR1kSfqoPHg',
-            'HOST': '192.168.144.172',
-            'PORT': '5432',
+            'NAME': 'defaultdb',
+            'USER': 'akmadmin',
+            'PASSWORD': 'AVNS_s8eoy6y-vRb4FJ1kM34',
+            'HOST': 'a269046-akamai-prod-5563659-default.g2a.akamaidb.net',
+            'PORT': '20107',
             'CONN_MAX_AGE': 30
         },
         'dbsecondary': {
             'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'ebdb_prod_backup',
-            'USER': 'surveydbuser',
-            'PASSWORD': 'QjmRcR1kSfqoPHg',
-            'HOST': '192.168.144.172',
-            'PORT': '5432',
+            'NAME': 'defaultdb',
+            'USER': 'akmadmin',
+            'PASSWORD': 'AVNS_s8eoy6y-vRb4FJ1kM34',
+            'HOST': 'a269046-akamai-prod-5563659-default.g2a.akamaidb.net',
+            'PORT': '20107',
             'CONN_MAX_AGE': 30
         }
     }
