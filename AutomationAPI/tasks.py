@@ -378,8 +378,8 @@ def SagoClientSurveyFetchAPI():
         ClientSupplierAPIErrorLog.objects.create(client_name = 'sagoapi',line_number = '357',error_details = error)
         return JsonResponse({"message": "Something Want Wrong"})
 
-@shared_task
-def ClientSurveyFetchAPI():
+@api_view('GET')
+def ClientSurveyFetchAPI(request):
     if settings.CELERY:
         CeleryRunLog.objects.create(taskname = 'ClientSurveyFetchAPI Started')
         close_old_connections()
