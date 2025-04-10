@@ -412,11 +412,11 @@ def ClientSurveyFetchAPI(request):
         except Exception as error:
             ClientSupplierAPIErrorLog.objects.create(client_name = 'Supplier_Buyer_Updated',line_number = '413',error_details = error)
             pass
-        try:
-            PanelEnabledSurveyFetchAPI()
-        except Exception as error:
-            ClientSupplierAPIErrorLog.objects.create(client_name = 'OPINIONSDEALS',line_number = '118',error_details = error)
-            pass
+        # try:
+        #     PanelEnabledSurveyFetchAPI()
+        # except Exception as error:
+        #     ClientSupplierAPIErrorLog.objects.create(client_name = 'OPINIONSDEALS',line_number = '118',error_details = error)
+        #     pass
         close_old_connections()        
         return JsonResponse({"message": "Success"})
     else:
